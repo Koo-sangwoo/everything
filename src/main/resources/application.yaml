@@ -3,9 +3,13 @@ spring:
     name: everything
   autoconfigure:
     exclude: # ??? ???? ????, ??? ??????? ????? ???? ??? ???
-      - org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration
-      - org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration
+      #- org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration
+      #- org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration
 
+  #cafe24 MariaDB Info
   datasource:
-    url:
+    url: jdbc:mariadb://lucky6757.cafe24.com:3306/lucky6757
+    hikari:
+      username: lucky6757
+      password: Ksw2916757@@
 
