@@ -13,3 +13,11 @@ spring:
       username: lucky6757
       password: Ksw2916757@@
 
+  # JPA setting, 추후에 세팅 상세하게 다루기
+  jpa:
+    hibernate:
+      ddl-auto: none # hikari가 DB에 영향을 미치지 않도록 수행(Ex : create table)
+    show-sql: true
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL8Dialect # 여기도 버전 안맞으면 오류 발생, 5.x버젼인지 8.x버전인지 확인하기
